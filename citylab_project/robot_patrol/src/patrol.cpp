@@ -134,12 +134,12 @@ private:
       double yaw_error = target_yaw - current_yaw;
       // yaw_error = atan2(sin(yaw_error), cos(yaw_error)); // Normalize
       yaw_error = atan2(sin(yaw_error), cos(yaw_error));
-      if (fabs(yaw_error) < 0.03) {
-        move.angular.z = 0.0;
+      if (fabs(yaw_error) < 0.02) {
+        // move.angular.z = 0.0;
         pub_->publish(move);
         state_ = MOVE;
       }
-      move.linear.x = 0.0;
+      // move.linear.x = 0.0;
 
       move.angular.z = direction_ / 2;
       pub_->publish(move);
