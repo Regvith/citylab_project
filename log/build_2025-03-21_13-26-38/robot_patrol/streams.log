@@ -1,0 +1,52 @@
+[0.023s] Invoking command in '/home/user/ros2_ws/src/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/install/turtlebot3_teleop:/home/user/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake /home/user/ros2_ws/src/citylab_project/robot_patrol -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/src/install/robot_patrol
+[2.825s] -- The C compiler identification is GNU 11.3.0
+[2.943s] -- The CXX compiler identification is GNU 11.3.0
+[3.300s] -- Detecting C compiler ABI info
+[3.390s] -- Detecting C compiler ABI info - done
+[3.397s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.398s] -- Detecting C compile features
+[3.399s] -- Detecting C compile features - done
+[3.403s] -- Detecting CXX compiler ABI info
+[3.499s] -- Detecting CXX compiler ABI info - done
+[3.508s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.508s] -- Detecting CXX compile features
+[3.508s] -- Detecting CXX compile features - done
+[3.522s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.275s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[4.612s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[4.771s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.794s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.826s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.869s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.925s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.307s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.323s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.223s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.277s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.356s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.636s] -- Looking for pthread.h
+[6.724s] -- Looking for pthread.h - found
+[6.724s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.811s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.812s] -- Found Threads: TRUE  
+[7.418s] -- Found sensor_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/sensor_msgs/share/sensor_msgs/cmake)
+[7.589s] -- Found nav_msgs: 4.2.3 (/home/simulations/ros2_sims_ws/install/nav_msgs/share/nav_msgs/cmake)
+[7.828s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.990s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.991s] -- Configured cppcheck include dirs: 
+[7.991s] -- Configured cppcheck exclude dirs and/or files: 
+[7.992s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.994s] -- Added test 'lint_cmake' to check CMake code style
+[7.996s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.998s] -- Added test 'uncrustify' to check C / C++ code style
+[7.999s] -- Configured uncrustify additional arguments: 
+[8.000s] -- Added test 'xmllint' to check XML markup files
+[8.010s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[8.010s]   ament_target_dependencies() the first argument must be a valid target name
+[8.010s] Call Stack (most recent call first):
+[8.010s]   CMakeLists.txt:35 (ament_target_dependencies)
+[8.010s] 
+[8.010s] [0m
+[8.010s] -- Configuring incomplete, errors occurred!
+[8.010s] See also "/home/user/ros2_ws/src/build/robot_patrol/CMakeFiles/CMakeOutput.log".
+[8.021s] Invoked command in '/home/user/ros2_ws/src/build/robot_patrol' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/install/turtlebot3_teleop:/home/user/install/turtlebot3_example:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake /home/user/ros2_ws/src/citylab_project/robot_patrol -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/src/install/robot_patrol

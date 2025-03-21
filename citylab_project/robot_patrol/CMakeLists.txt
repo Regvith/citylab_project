@@ -31,3 +31,7 @@ add_executable(patrol_exe src/patrol.cpp)
 ament_target_dependencies(patrol_exe rclcpp geometry_msgs nav_msgs sensor_msgs)
 install(TARGETS patrol_exe DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+add_executable(patrol_real_exe src/patrol_real_robot.cpp)
+ament_target_dependencies(patrol_real_exe rclcpp geometry_msgs nav_msgs sensor_msgs)
+install(TARGETS patrol_real_exe DESTINATION lib/${PROJECT_NAME})
+
