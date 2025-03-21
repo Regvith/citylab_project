@@ -118,7 +118,7 @@ private:
   void timer_callback() {
     switch (state_) {
     case MOVE:
-      if (front_value < 0.35) {
+      if (front_value < 0.4) {
         target_yaw = current_yaw + direction_;
         target_yaw = atan2(sin(target_yaw), cos(target_yaw));
         pub_->publish(move);
@@ -134,7 +134,7 @@ private:
       double yaw_error = target_yaw - current_yaw;
       // yaw_error = atan2(sin(yaw_error), cos(yaw_error)); // Normalize
       yaw_error = atan2(sin(yaw_error), cos(yaw_error));
-      if (fabs(yaw_error) < 0.03) {
+      if (fabs(yaw_error) < 0.05) {
         move.angular.z = 0.0;
         pub_->publish(move);
         state_ = MOVE;
