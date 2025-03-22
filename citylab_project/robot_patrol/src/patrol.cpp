@@ -124,9 +124,9 @@ private:
         pub_->publish(move);
         state_ = ROTATE;
       }
+      move.angular.z = -0.0134; // offset for drifting
 
       move.linear.x = 0.1;
-      move.angular.z = 0.0;
       pub_->publish(move);
 
       break;
@@ -134,14 +134,14 @@ private:
       double yaw_error = target_yaw - current_yaw;
       // yaw_error = atan2(sin(yaw_error), cos(yaw_error)); // Normalize
       yaw_error = atan2(sin(yaw_error), cos(yaw_error));
-      if (fabs(yaw_error) < 0.02) {
-        // move.angular.z = 0.0;
-        pub_->publish(move);
+      if (fabs(yaw_error) < 0.04) {
+         move.angular.z = 0.0;
+         pub_->publish(move);
         state_ = MOVE;
       }
       // move.linear.x = 0.0;
 
-      move.angular.z = direction_ / 2;
+      move.angular.z = (direction_ / 2);
       pub_->publish(move);
 
       break;
@@ -164,6 +164,7 @@ private:
   rclcpp::CallbackGroup::SharedPtr cb_odom;
   rclcpp::CallbackGroup::SharedPtr cb_scan;
   rclcpp::CallbackGroup::SharedPtr cb_timer;
+  float bias_offset = 0.1;
   vector<float> scan_msg{};
   double front_value;
   bool front_value_init = true;
