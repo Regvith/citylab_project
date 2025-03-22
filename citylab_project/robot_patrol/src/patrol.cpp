@@ -135,8 +135,8 @@ private:
       // yaw_error = atan2(sin(yaw_error), cos(yaw_error)); // Normalize
       yaw_error = atan2(sin(yaw_error), cos(yaw_error));
       if (fabs(yaw_error) < 0.04) {
-         move.angular.z = 0.0;
-         pub_->publish(move);
+        move.angular.z = 0.0;
+        pub_->publish(move);
         state_ = MOVE;
       }
       // move.linear.x = 0.0;

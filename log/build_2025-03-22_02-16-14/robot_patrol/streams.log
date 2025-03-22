@@ -1,0 +1,34 @@
+[0.024s] Invoking command in '/home/user/ros2_ws/src/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/robot_patrol -- -j8 -l8
+[0.078s] [35m[1mConsolidate compiler generated dependencies of target patrol_exe[0m
+[0.097s] [ 25%] [32mBuilding CXX object CMakeFiles/patrol_real_exe.dir/src/patrol_real_robot.cpp.o[0m
+[0.104s] [ 50%] [32mBuilding CXX object CMakeFiles/patrol_exe.dir/src/patrol.cpp.o[0m
+[11.217s] [ 75%] [32m[1mLinking CXX executable patrol_real_exe[0m
+[11.238s] [100%] [32m[1mLinking CXX executable patrol_exe[0m
+[11.641s] [100%] Built target patrol_real_exe
+[11.686s] [100%] Built target patrol_exe
+[11.699s] Invoked command in '/home/user/ros2_ws/src/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/robot_patrol -- -j8 -l8
+[11.762s] Invoking command in '/home/user/ros2_ws/src/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/build/robot_patrol
+[11.771s] -- Install configuration: ""
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/ament_index/resource_index/package_run_dependencies/robot_patrol
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/ament_index/resource_index/parent_prefix_path/robot_patrol
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.sh
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.dsv
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/path.sh
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/path.dsv
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.bash
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.sh
+[11.771s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.zsh
+[11.772s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.dsv
+[11.772s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/package.dsv
+[11.772s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/ament_index/resource_index/packages/robot_patrol
+[11.772s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig.cmake
+[11.772s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig-version.cmake
+[11.772s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/package.xml
+[11.772s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_exe
+[11.780s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_exe" to ""
+[11.780s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/launch
+[11.780s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/launch/start_patrolling_real_robot.launch.py
+[11.780s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/launch/start_patrolling.launch.py
+[11.781s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_real_exe
+[11.788s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_real_exe" to ""
+[11.790s] Invoked command in '/home/user/ros2_ws/src/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/build/robot_patrol

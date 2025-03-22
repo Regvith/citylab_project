@@ -1,0 +1,12 @@
+[0.024s] Invoking command in '/home/user/ros2_ws/src/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/robot_patrol -- -j8 -l8
+[0.078s] [35m[1mConsolidate compiler generated dependencies of target patrol_real_exe[0m
+[0.097s] [ 50%] Built target patrol_exe
+[0.102s] [ 75%] [32mBuilding CXX object CMakeFiles/patrol_real_exe.dir/src/patrol_real_robot.cpp.o[0m
+[2.490s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/patrol_real_robot.cpp:[m[K In member function '[01m[Kvoid Patrol::timer_callback()[m[K':
+[2.490s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/patrol_real_robot.cpp:133:7:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' before '[01m[Kbreak[m[K'
+[2.490s]   133 |       [01;31m[Kbreak[m[K;
+[2.490s]       |       [01;31m[K^~~~~[m[K
+[5.815s] gmake[2]: *** [CMakeFiles/patrol_real_exe.dir/build.make:76: CMakeFiles/patrol_real_exe.dir/src/patrol_real_robot.cpp.o] Error 1
+[5.815s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/patrol_real_exe.dir/all] Error 2
+[5.815s] gmake: *** [Makefile:146: all] Error 2
+[5.817s] Invoked command in '/home/user/ros2_ws/src/build/robot_patrol' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/rclrs_tests:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_client_service:/home/simulations/ros2_sims_ws/install/sensor_msgs_py:/home/simulations/ros2_sims_ws/install/examples_rclrs_minimal_pub_sub:/home/simulations/ros2_sims_ws/install/examples_rclrs_message_demo:/home/simulations/ros2_sims_ws/install/rclrs:/home/simulations/ros2_sims_ws/install/rosidl_runtime_rs:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/robot_patrol -- -j8 -l8

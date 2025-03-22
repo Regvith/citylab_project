@@ -124,10 +124,11 @@ private:
         pub_->publish(move);
         state_ = ROTATE;
       }
-      move.angular.z = -0.0134; // offset for drifting
+      move.angular.z = 0; // offset for drifting
 
       move.linear.x = 0.1;
       pub_->publish(move);
+      RCLCPP_INFO(this->get_logger(), "Move state");
 
       break;
     case ROTATE:
@@ -141,9 +142,9 @@ private:
       }
       // move.linear.x = 0.0;
 
-      move.angular.z = (direction_ / 2);
+      // move.angular.z = (direction_ / 2);
       pub_->publish(move);
-
+      RCLCPP_INFO(this->get_logger(), "Rotate");
       break;
     }
   }
