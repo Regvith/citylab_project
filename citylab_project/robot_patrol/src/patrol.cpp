@@ -73,6 +73,8 @@ private:
       if (!std::isinf(msg->ranges[i])) {
         scan_msg.at(counter) = msg->ranges[i];
         scan_angle.at(counter) = msg->angle_min + i * msg->angle_increment;
+        scan_angle.at(counter) =
+            atan2(sin(scan_angle.at(counter)), cos(scan_angle.at(counter)));
         scan_index.at(counter) = i;
         counter++;
       }
@@ -121,10 +123,17 @@ private:
       if (front_value < 0.35) {
         target_yaw = current_yaw + direction_;
         target_yaw = atan2(sin(target_yaw), cos(target_yaw));
+        move.angular.z = 0; // offset for drifting
+        move.linear.x = 0;
         pub_->publish(move);
         state_ = ROTATE;
       }
-      move.angular.z = -0.0134; // offset for drifting
+      if (direction_ > 0)
+        bias = 1;
+      if (direction_ < 0)
+        bias = -1;
+
+      move.angular.z = bias * 0.014; // offset for drifting
 
       move.linear.x = 0.1;
       pub_->publish(move);
@@ -134,7 +143,7 @@ private:
       double yaw_error = target_yaw - current_yaw;
       // yaw_error = atan2(sin(yaw_error), cos(yaw_error)); // Normalize
       yaw_error = atan2(sin(yaw_error), cos(yaw_error));
-      if (fabs(yaw_error) < 0.04) {
+      if (fabs(yaw_error) < 0.035) {
         move.angular.z = 0.0;
         pub_->publish(move);
         state_ = MOVE;
@@ -177,6 +186,7 @@ private:
   enum ROBOT_STATE { MOVE, ROTATE };
   ROBOT_STATE state_ = MOVE;
   bool init_service = true;
+  int bias = 1;
 };
 
 int main(int argc, char *argv[]) {
